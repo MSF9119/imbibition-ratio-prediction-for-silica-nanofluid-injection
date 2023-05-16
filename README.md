@@ -6,14 +6,14 @@ Petroleum Engineering
 Reservoir Engineering
 
 **1.0 PROJECT DESCRIPTION:**
-This projects acts only as a proof of concept since it only works with 22 datapoints that I obtained during my own experiment. Considering the fact that the number of datapoints is relatively low for a Machine Learning model, and also obtaining such data for a single individual is expensive (stone sample are quite expensive, not to mention the lack of access to proper instruments for obtaining the data), this project acts more as a proof of concept for scientists or companies to use in the process of Reservoir Engineering
+This projects acts only as a proof of concept since it only works with 22 datapoints that I obtained during my own experiment. Considering the fact that the number of datapoints is relatively low for a Machine Learning model, and also obtaining such data for a single individual is expensive (nano particles for fluid sample are quite expensive, not to mention the lack of access to proper instruments for obtaining the data), this project acts more as a proof of concept for scientists or companies to use in the process of Reservoir Engineering
 
 **1.1. Experimental Data**
-The experimental used in this project was obtained through my Masters Thesis Research. I obtained Water-Injection and Silica Nanofluid-Injection Imbibition ratios for 22 stone samples at both shortterm (t = 20 mins) and longterm ( t = infinity). The data set has six columns:
-% Column A: Imbibition ratio of stone sample for water injection at t =20m
-% Column B: Imbibition ratio of stone sample for silica injection at t =20m
-% Column D: Imbibition ratio of stone sample for water injection at infinity
-% Column E: Imbibition ratio of stone sample for silica injection atinfinity
+The experimental used in this project was obtained through my Masters Thesis Research. I obtained Water-Injection and Silica Nanofluid-Injection Imbibition ratios for 22 rock samples at both shortterm (t = 20 mins) and longterm ( t = infinity). The data set has six columns:
+% Column A: Imbibition ratio of rock sample for water injection at t =20m
+% Column B: Imbibition ratio of rock sample for silica injection at t =20m
+% Column D: Imbibition ratio of rock sample for water injection at infinity
+% Column E: Imbibition ratio of rock sample for silica injection atinfinity
 
 % Columns C and F are only delta values
 
@@ -21,7 +21,7 @@ The experimental used in this project was obtained through my Masters Thesis Res
 The script reads 22 sample datapoints, developes a ML model on it to predict values ratios
 at t = infinity from values at t = 20 mins. It performs two functions:
 
-% mode 1: predict values at infinity from values at t = 20mins
+% mode 1: predict values at infinity from values at t = 20 mins
 % mode 2: same function as above, but it also lets you know if your stone sample is suited for silica nanofluid injection
 
 **1.3. Prediction Model:**
