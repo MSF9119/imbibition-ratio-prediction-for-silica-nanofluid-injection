@@ -9,11 +9,13 @@ Reservoir Engineering
 This projects acts only as a proof of concept since it only works with 22 datapoints that I obtained during my own experiment. Considering the fact that the number of datapoints is relatively low for a Machine Learning model, and also obtaining such data for a single individual is expensive (stone sample are quite expensive, not to mention the lack of access to proper instruments for obtaining the data), this project acts more as a proof of concept for scientists or companies to use in the process of Reservoir Engineering
 
 1.1. Experimental Data
-The experimental used in this project was obtained through my Masters Thesis Research. I obtained Water-Injection and Silica Nanofluid-Injection Imbibition ratios for 22 stone samples at both shortterm (t = 20 mins) and longterm ( t = infinity). The data set has for columns:
+The experimental used in this project was obtained through my Masters Thesis Research. I obtained Water-Injection and Silica Nanofluid-Injection Imbibition ratios for 22 stone samples at both shortterm (t = 20 mins) and longterm ( t = infinity). The data set has six columns:
 % Column A: Imbibition ratio of stone sample for water injection at t =20m
 % Column B: Imbibition ratio of stone sample for silica injection at t =20m
-% Column C: Imbibition ratio of stone sample for water injection at infinity
-% Column D: Imbibition ratio of stone sample for silica injection atinfinity
+% Column D: Imbibition ratio of stone sample for water injection at infinity
+% Column E: Imbibition ratio of stone sample for silica injection atinfinity
+
+% Columns C and F are only delta values
 
 1.2. Script
 The script reads 22 sample datapoints, developes a ML model on it to predict values ratios
