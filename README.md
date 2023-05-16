@@ -10,8 +10,8 @@ This projects acts only as a proof of concept since it only works with 22 datapo
 
 **1.1. Experimental Data**
 The experimental used in this project was obtained through my Masters Thesis Research. I obtained Water-Injection and Silica Nanofluid-Injection Imbibition ratios for 22 rock samples at both shortterm (t = 20 mins) and longterm ( t = infinity). The data set has six columns:
-% Column A: Imbibition ratio of rock sample for water injection at t =20m
-% Column B: Imbibition ratio of rock sample for silica injection at t =20m
+% Column A: Imbibition ratio of rock sample for water injection at t = 20m
+% Column B: Imbibition ratio of rock sample for silica injection at t = 20m
 % Column D: Imbibition ratio of rock sample for water injection at infinity
 % Column E: Imbibition ratio of rock sample for silica injection atinfinity
 
