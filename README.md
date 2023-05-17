@@ -9,17 +9,17 @@ Reservoir Engineering
 This projects acts only as a proof of concept since it only works with 22 datapoints that I obtained during my own experiment. Considering the fact that the number of datapoints is relatively low for a Machine Learning model, and also obtaining such data for a single individual is expensive (nano particles for fluid sample are quite expensive, not to mention the lack of access to proper instruments for obtaining the data), this project acts more as a proof of concept for scientists or companies to use in the process of Reservoir Engineering
 
 **1.1. Experimental Data**
-The experimental used in this project was obtained through my Masters Thesis Research. I obtained Water-Injection and Silica Nanofluid-Injection Imbibition ratios for 22 rock samples at both shortterm (t = 20 mins) and longterm ( t = infinity). The data set has six columns:
+The experimental used in this project was obtained through my Masters' Thesis Research. I obtained Water-Injection and Silica Nanofluid-Injection Imbibition ratios for 22 rock samples at both shortterm (t = 20 mins) and longterm ( t -> infinity). The data set has six columns:
 % Column A: Imbibition ratio of rock sample for water injection at t = 20m
-% Column B: Imbibition ratio of rock sample for silica injection at t = 20m
+% Column B: Imbibition ratio of rock sample for silica nanofluid injection at t = 20m
 % Column D: Imbibition ratio of rock sample for water injection at infinity
-% Column E: Imbibition ratio of rock sample for silica injection atinfinity
+% Column E: Imbibition ratio of rock sample for silica nanofluid injection atinfinity
 
 % Columns C and F are only delta values
 
 **1.2. Script**
 The script reads 22 sample datapoints, developes a ML model on it to predict values ratios
-at t = infinity from values at t = 20 mins. It performs two functions:
+at t -> infinity from values at t = 20 mins. It performs two functions:
 
 % mode 1: predict values at infinity from values at t = 20 mins
 % mode 2: same function as above, but it also lets you know if your stone sample is suited for silica nanofluid injection
@@ -36,6 +36,6 @@ Using a SVM (Support Vector Machine) Regression model to perform the predictions
 **3.0. USING THE SCRIPT:**
 To use the script, you can either type in '1' or '2' to choose your preferred mode.
 
-*If you choose mode 1, you must input your own shortterm experimental Imbibition Ratio for both water and Silica nanofluid injected stone sample respectively. The model will let you know what Imbibition values you can expect at longterm (t = infinity)
+*If you choose mode 1, you must input your own shortterm experimental Imbibition Ratio for both water and Silica nanofluid injected stone sample respectively. The model will let you know what Imbibition values you can expect at longterm (t -> infinity)
 
-*If you choose mode 2, you must input your own shortterm experimental Imbibition Ratio for both water and Silica nanofluid injected stone sample respectively. The model will let you know what Imbibition values you can expect at longterm (t = infinity) and will also let you know if your specific stone sample is suited for Silica Nanofluid injection.
+*If you choose mode 2, you must input your own shortterm experimental Imbibition Ratio for both water and Silica nanofluid injected rock sample respectively. The model will let you know what Imbibition values you can expect at longterm (t -> infinity) and will also let you know if your specific stone sample is suited for Silica Nanofluid injection.
